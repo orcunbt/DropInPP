@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44EE16F41EF2988C003CB34F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE16F31EF2988C003CB34F /* AppDelegate.swift */; };
-		44EE16F61EF2988C003CB34F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE16F51EF2988C003CB34F /* ViewController.swift */; };
+		44848CB81EF29D14003A3D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE16F51EF2988C003CB34F /* ViewController.swift */; };
+		44848CB91EF29D17003A3D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE16F31EF2988C003CB34F /* AppDelegate.swift */; };
 		44EE16F91EF2988C003CB34F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE16F71EF2988C003CB34F /* Main.storyboard */; };
 		44EE16FB1EF2988C003CB34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EE16FA1EF2988C003CB34F /* Assets.xcassets */; };
 		44EE16FE1EF2988C003CB34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EE16FC1EF2988C003CB34F /* LaunchScreen.storyboard */; };
 		44EE17091EF2988D003CB34F /* DropInPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE17081EF2988D003CB34F /* DropInPPTests.swift */; };
 		44EE17141EF2988D003CB34F /* DropInPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE17131EF2988D003CB34F /* DropInPPUITests.swift */; };
+		5C6F2AEF9A0E2D692A29961C /* Pods_DropInPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD43AD6C595969AC988A0ECD /* Pods_DropInPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3A1602D769DCA4E112FA7C /* Pods-DropInPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropInPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropInPP/Pods-DropInPP.debug.xcconfig"; sourceTree = "<group>"; };
+		2134DEBBBFBFD4ACBEDCC97E /* Pods-DropInPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropInPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropInPP/Pods-DropInPP.release.xcconfig"; sourceTree = "<group>"; };
 		44EE16F01EF2988C003CB34F /* DropInPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropInPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EE16F31EF2988C003CB34F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EE16F51EF2988C003CB34F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		44EE170F1EF2988D003CB34F /* DropInPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropInPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EE17131EF2988D003CB34F /* DropInPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInPPUITests.swift; sourceTree = "<group>"; };
 		44EE17151EF2988D003CB34F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD43AD6C595969AC988A0ECD /* Pods_DropInPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropInPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6F2AEF9A0E2D692A29961C /* Pods_DropInPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358930338EB536081F506374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD43AD6C595969AC988A0ECD /* Pods_DropInPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44EE16E71EF2988C003CB34F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				44EE17071EF2988D003CB34F /* DropInPPTests */,
 				44EE17121EF2988D003CB34F /* DropInPPUITests */,
 				44EE16F11EF2988C003CB34F /* Products */,
+				AFC111326B7FA847082CD9EB /* Pods */,
+				358930338EB536081F506374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = DropInPPUITests;
 			sourceTree = "<group>";
 		};
+		AFC111326B7FA847082CD9EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A3A1602D769DCA4E112FA7C /* Pods-DropInPP.debug.xcconfig */,
+				2134DEBBBFBFD4ACBEDCC97E /* Pods-DropInPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44EE17181EF2988D003CB34F /* Build configuration list for PBXNativeTarget "DropInPP" */;
 			buildPhases = (
+				A2CC1410980D4B18E88805EA /* [CP] Check Pods Manifest.lock */,
 				44EE16EC1EF2988C003CB34F /* Sources */,
 				44EE16ED1EF2988C003CB34F /* Frameworks */,
 				44EE16EE1EF2988C003CB34F /* Resources */,
+				3777999AB58FBBFFD29ED2BD /* [CP] Embed Pods Frameworks */,
+				A1C192B15AAC26D709671E97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +281,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3777999AB58FBBFFD29ED2BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropInPP/Pods-DropInPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C192B15AAC26D709671E97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropInPP/Pods-DropInPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2CC1410980D4B18E88805EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44EE16EC1EF2988C003CB34F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44EE16F61EF2988C003CB34F /* ViewController.swift in Sources */,
-				44EE16F41EF2988C003CB34F /* AppDelegate.swift in Sources */,
+				44848CB91EF29D17003A3D33 /* AppDelegate.swift in Sources */,
+				44848CB81EF29D14003A3D33 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +485,7 @@
 		};
 		44EE17191EF2988D003CB34F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3A1602D769DCA4E112FA7C /* Pods-DropInPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DropInPP/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		44EE171A1EF2988D003CB34F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2134DEBBBFBFD4ACBEDCC97E /* Pods-DropInPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DropInPP/Info.plist;
@@ -505,6 +582,7 @@
 				44EE171A1EF2988D003CB34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44EE171B1EF2988D003CB34F /* Build configuration list for PBXNativeTarget "DropInPPTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +591,7 @@
 				44EE171D1EF2988D003CB34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44EE171E1EF2988D003CB34F /* Build configuration list for PBXNativeTarget "DropInPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +600,7 @@
 				44EE17201EF2988D003CB34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

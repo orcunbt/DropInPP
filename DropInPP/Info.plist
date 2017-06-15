@@ -34,5 +34,57 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>com.venmo.touch.v2</string>
+        <string>com.paypal.ppclient.touch.v1</string>
+        <string>com.paypal.ppclient.touch.v2</string>
+        <string>org-appextension-feature-password-management</string>
+    </array>
+    
+                <key>NSCameraUsageDescription</key>
+                <string>
+        To offer card scanning via card.io
+    </string>
+    
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>orcunBraintree.DropInPP.payments</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>orcunBraintree.DropInPP.payments</string>
+            </array>
+        </dict>
+    </array>
+    <key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>orcodevbox.co.uk</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSRequiresCertificateTransparency</key>
+				<false/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSThirdPartyExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

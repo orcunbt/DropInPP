@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Braintree
+
+let URL_STRING = "orcunBraintree.DropInPP.payments"
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +19,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        BTAppSwitch.setReturnURLScheme(URL_STRING)
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        if(url.scheme?.localizedCaseInsensitiveCompare(URL_STRING) == .orderedSame) {
+            
+            return BTAppSwitch.handleOpen(url, options: options)
+        }
+        return false
+    }
+    
+    // If you support iOS 7 or 8, add the following method.
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        if (url.scheme?.localizedCaseInsensitiveCompare("orcunBraintree.DropInPP.payments") == .orderedSame) {
+            
+            return BTAppSwitch.handleOpen(url, sourceApplication: sourceApplication)
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
