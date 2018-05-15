@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     func showDropIn() {
         
         let request =  BTDropInRequest()
-        request.amount = "$10"
+        request.amount = "10.00"
         request.applePayDisabled = true
         
         let dropInController = BTDropInController(authorization: myTokenizationKey, request: request) { (dropController, dropInResult, error) in
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     
     func postNonceToServer(paymentMethodNonce : String) {
         
-        price = 10
+        price = 10.00
         let paymentURL = NSURL(string: "http://orcodevbox.co.uk/BTOrcun/iosPayment.php")!
         let request = NSMutableURLRequest(url: paymentURL as URL)
         request.httpBody = "amount=\(Double(price))&payment_method_nonce=\(paymentMethodNonce)".data(using: String.Encoding.utf8);
